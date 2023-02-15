@@ -10,6 +10,51 @@
 * 	Template Style 
 *
 * ======================================================= */
+.skillset {
+  margin-top: 100px;
+  margin-bottom: 130px;
+  padding: 35px;
+  border: 3.5px solid #FF9000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #555;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillset h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skillset ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skillset li {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 120px;
+}
+
+.skillset li:hover {
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
@@ -280,7 +325,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-about,
 #fh5co-resume,
-#fh5co-skills,
+#fh5co-skillls,
 #fh5co-started,
 #fh5co-work,
 #fh5co-blog,
@@ -685,18 +730,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .chart {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto 40px auto;
   position: relative;
   text-align: center;
 }
 .chart span {
   position: absolute;
-  top: 50%;
+  top: 55%;
+  font-size: larger;
   left: 0;
   margin-top: -30px;
-  width: 100%;
+  width: 90%;
 }
 .chart span strong {
   display: block;
@@ -705,6 +751,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   left: 0;
   top: 0;
+  
 }
 
 .work {
@@ -1259,11 +1306,15 @@ input[type="text"] {
 }
 
 .row-pb-md {
-  padding-bottom: 4em !important;
+  padding-bottom: 15px !important;
+
+  
 }
 
 .row-pb-sm {
   padding-bottom: 2em !important;
+  border: 2px solid #555;
+  border-radius: 5px;
 }
 
 .nopadding {
